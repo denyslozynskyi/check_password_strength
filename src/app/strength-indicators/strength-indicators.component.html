@@ -1,0 +1,42 @@
+<div class="strength-indicators">
+  <div
+    class="strength-indicators-indicator"
+    [ngClass]="
+      checkResult.isEmpty
+        ? 'strength-indicators-indicator'
+        : checkResult.shortPassword || checkResult.easyPasswordStrength
+        ? 'strength-indicators-indicator-red'
+        : checkResult.mediumPasswordStrength
+        ? 'strength-indicators-indicator-yellow'
+        : checkResult.strongPasswordStrength
+        ? 'strength-indicators-indicator-green'
+        : ''
+    "
+  ></div>
+  <div
+    class="strength-indicators-indicator"
+    [ngClass]="
+      checkResult.isEmpty
+        ? 'strength-indicators-indicator'
+        : checkResult.shortPassword
+        ? 'strength-indicators-indicator-red'
+        : checkResult.mediumPasswordStrength
+        ? 'strength-indicators-indicator-yellow'
+        : checkResult.strongPasswordStrength
+        ? 'strength-indicators-indicator-green'
+        : ''
+    "
+  ></div>
+  <div
+    class="strength-indicators-indicator"
+    [ngClass]="
+      checkResult.isEmpty
+        ? 'strength-indicators-indicator'
+        : checkResult.shortPassword
+        ? 'strength-indicators-indicator-red'
+        : checkResult.strongPasswordStrength
+        ? 'strength-indicators-indicator-green'
+        : ''
+    "
+  ></div>
+</div>

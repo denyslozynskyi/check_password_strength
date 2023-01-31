@@ -1,0 +1,32 @@
+.container {
+  width: 50%;
+  max-width: 500px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+
+.app-input-field, .app-strength-indicators {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.result-field {
+  width: 90%;
+
+  .result {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .result-field .result {
+    font-size: 10px;
+  }
+}
